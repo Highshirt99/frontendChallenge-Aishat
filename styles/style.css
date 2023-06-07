@@ -7,25 +7,29 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #b7daff;
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
 }
 
 .main {
   background: #fff;
   border-radius: 10px;
-  margin: 3rem auto;
   width: fit-content;
+  margin: 0 auto;
+  padding: 5px 0;
+  /* padding-bottom: 2rem; */
   /* padding: 1rem; */
-  height: auto;
+  /* height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   /* padding: 1rem; */
 }
 
 .container .header {
   display: flex;
-  gap: 60px;
+  gap: 85px;
   align-items: center;
   border-bottom: 1px solid lightgray;
   padding: 10px;
@@ -56,7 +60,7 @@ body {
 
 .headerItem.searchBox {
   width: 600px;
-  background: #f6f6fe;
+  background: #eff0ff;
   padding: 5px;
   border-radius: 10px;
 }
@@ -76,7 +80,7 @@ body {
   margin: 0 10px 0 15px;
 }
 .profile {
-  color: #201c5a;
+  color: #aaa0ba;
   font-size: 14px;
 }
 
@@ -120,7 +124,7 @@ body {
 .contentBox {
   display: flex;
   height: 250px;
-  gap: 20px;
+  gap: 45px;
 }
 .subjectsList {
   padding-top: 1rem;
@@ -134,16 +138,16 @@ body {
   text-align: center;
   width: fit-content;
   padding: 6px;
-  background: #f6f6fe;
+  background: #f6f7ff;
   border-radius: 10px;
   font-size: 14px;
-  color: #201c5a;
+  color: #635181;
   cursor: pointer;
 }
 
 .subjectsList li:hover {
   color: #fff;
-  background: #1c20d0;
+  background: #535adf;
 }
 
 .mainContent {
@@ -160,7 +164,7 @@ body {
 }
 
 .gridBox .title {
-  color: #201c5a;
+  color: #635181;
   margin-bottom: 10px;
 }
 
@@ -172,9 +176,9 @@ body {
 }
 
 .gridBox .title span {
-  color: #1c20d0;
+  color: #898ee9;
   font-weight: bold;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .gridItem {
@@ -184,7 +188,7 @@ body {
 }
 
 .inclusiveDes {
-  background: #f6fdfe;
+  background: #eff0ff;
   width: 350px;
   height: 180px;
   padding: 1rem;
@@ -197,7 +201,7 @@ body {
 
 .desTrends {
   position: relative;
-  background: #f6fdfe;
+  background: #eff0ff;
   width: 150px;
   height: 180px;
   padding: 1rem;
@@ -217,23 +221,23 @@ body {
   gap: 6px;
 }
 .inclusiveDes p:first-child {
-  color: #201c5a;
+  color: #625083;
   font-size: 18px;
   width: 200px;
   margin-bottom: 8px;
 }
 .inclusiveDes .name {
   font-size: 12px;
-  color: #201c5a;
+  color: #968bb1;
 }
 
 .inclusiveDes .time,
 .desTrends .time {
-  background: #f6f6fe;
+  background: #e1e3fe;
   padding: 2px;
   border-radius: 5px;
   width: 60px;
-  color: #201c5a;
+  color: #45306a;
   text-align: center;
   margin-top: 20px;
 }
@@ -247,36 +251,38 @@ body {
   gap: 2px;
 }
 
-.inclusiveDes .bottom .date, .desTrends .bottom .date{
+.inclusiveDes .bottom .date,
+.desTrends .bottom .date {
   font-size: 10px;
-  color: #a7a1c4
+  color: #c3bbde;
 }
-.desTrends p:first-child{
+.desTrends p:first-child {
+  color: #625083;
   font-size: 16px;
   width: 100px;
 }
-.desTrends .name{
+.desTrends .name {
   font-size: 10px;
   color: #201c5a;
 }
 
-.chats .gridTemplate2{
+.chats .gridTemplate2 {
+  width: 200px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
   margin-bottom: 20px;
 }
 
-.chats img{
-width: 80%;
-object-fit: cover;
-
+.chats img {
+  width: 80%;
+  object-fit: cover;
 }
 
-.grid2-item{
-  background: #f6fdfe;
+.grid2-item {
+  background: #eff0ff;
   width: 120px;
-  height: 85px;
+  height: 90px;
   padding: 0.5rem;
   border-radius: 12px;
   display: flex;
@@ -287,13 +293,14 @@ object-fit: cover;
   color: #595eb8;
 }
 
-.inclusiveDes img, .desTrends img{
+.inclusiveDes img,
+.desTrends img {
   border-radius: 12px;
   width: 40px;
   height: 40px;
   object-fit: cover;
 }
-#stationary{
+#stationary {
   width: 300px;
   height: 200px;
   position: absolute;
@@ -301,10 +308,9 @@ object-fit: cover;
   bottom: 25%;
   border-radius: 0;
   object-fit: cover;
-
 }
 
-#globe{
+#globe {
   width: 70px;
   height: 50px;
   position: absolute;
@@ -317,7 +323,7 @@ object-fit: cover;
   width: 350px;
   border-radius: 12px;
   padding: 1rem;
-  background-image: linear-gradient(to left, #1c20d0, #595eb8);
+  background-image: linear-gradient(to left, #5a61e9, #383fbb);
   position: relative;
 }
 
@@ -332,16 +338,16 @@ object-fit: cover;
 }
 
 .vidLessons .gradient1 {
-  background: linear-gradient(to right, #1c20d0, blue);
+  background: linear-gradient(to right, #383fbb, #5a61e9);
   width: 150px;
 }
 .vidLessons .gradient2 {
-  background: repeating-linear-gradient(to right, #1c20d0, blue);
+  background: repeating-linear-gradient(to right, #1c20d0, #5a61e9);
   width: 100px;
 }
 .vidLessons .gradient3 {
   width: 50px;
-  background: linear-gradient(to right, #1c20d0, blue);
+  background: linear-gradient(to right, #1c20d0, #383fbb);
 }
 
 .effectiveText .text {
@@ -398,7 +404,7 @@ object-fit: cover;
 }
 
 .vidLessonsCard {
-  background-image: linear-gradient(to right, dodgerblue, #1c20d0);
+  background-image: linear-gradient(to right, #5a61e9, #3d43af);
   color: whitesmoke;
   font-weight: 200;
   border-radius: 8px;
@@ -434,7 +440,7 @@ object-fit: cover;
 
 .topTeachers .teachers > span i {
   position: relative;
-  left: 70px;
+  left: 80px;
   color: #1c20d0;
 }
 
@@ -470,11 +476,12 @@ object-fit: cover;
 }
 .teachersList .teacher .rating {
   color: #1c20d0;
+  margin-left: 15px;
 }
 .sidebar2 {
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
   width: 155px;
-  height: fit-content;
+  height: 345px;
   border-right: 1px solid lightgray;
 }
 
@@ -486,11 +493,15 @@ object-fit: cover;
 }
 .homework span,
 .courses p {
-  color: #201c5a;
-  font-size: 14px;
+  color: #1c20d0;
+  font-size: 12px;
+}
+.homework span {
+  margin: 15px 0 5px 0;
 }
 .homework i {
   color: #1c20d0;
+  margin: 15px 0 5px 0;
 }
 .courses {
   display: flex;
@@ -572,6 +583,6 @@ object-fit: cover;
   align-items: center;
   gap: 85px;
   margin-top: 5px;
-  color: #201c5a;
+  color: #1c20d0;
   font-size: 14px;
 }
