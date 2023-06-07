@@ -1,0 +1,577 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #b7daff;
+  height: 100vh;
+}
+
+.main {
+  background: #fff;
+  border-radius: 10px;
+  margin: 3rem auto;
+  width: fit-content;
+  /* padding: 1rem; */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1rem; */
+}
+
+.container .header {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+}
+
+.headerItem {
+  display: flex;
+  gap: 0.1rem;
+  align-items: center;
+}
+/* .logoDiv{
+
+} */
+.logo {
+  font-size: 16px;
+}
+.logoText {
+  font-size: 14px;
+  color: #201c5a;
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+.headerItem2 {
+  display: flex;
+  gap: 230px;
+}
+
+.headerItem.searchBox {
+  width: 600px;
+  background: #f6f6fe;
+  padding: 5px;
+  border-radius: 10px;
+}
+.searchBox input {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+::placeholder {
+  color: #a7a1c4;
+  font-size: 14px;
+}
+
+.profile img {
+  object-fit: cover;
+  margin: 0 10px 0 15px;
+}
+.profile {
+  color: #201c5a;
+  font-size: 14px;
+}
+
+.menuList {
+  list-style-type: none;
+  padding: 2rem 1rem;
+  height: auto;
+  width: 155px;
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
+.menuList li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #201c5a;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.menuList > li > span {
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.menuList > li > i {
+  align-self: center;
+}
+.menuList > li > svg {
+  fill: #201c5a;
+  align-self: center;
+}
+.menuList > li > svg:hover {
+  fill: #1c20d0;
+}
+.menuList > li:hover {
+  color: #1c20d0;
+}
+.contentBox {
+  display: flex;
+  height: 250px;
+  gap: 20px;
+}
+.subjectsList {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.subjectsList li {
+  list-style-type: none;
+  min-width: 100px;
+  text-align: center;
+  width: fit-content;
+  padding: 6px;
+  background: #f6f6fe;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #201c5a;
+  cursor: pointer;
+}
+
+.subjectsList li:hover {
+  color: #fff;
+  background: #1c20d0;
+}
+
+.mainContent {
+  padding-top: 1rem;
+  height: fit-content;
+}
+
+.gridBox {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+
+  /* height: 100px; */
+}
+
+.gridBox .title {
+  color: #201c5a;
+  margin-bottom: 10px;
+}
+
+.gridBox .teachers,
+.teacher {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.gridBox .title span {
+  color: #1c20d0;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.gridItem {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.inclusiveDes {
+  background: #f6fdfe;
+  width: 350px;
+  height: 180px;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.desTrends {
+  position: relative;
+  background: #f6fdfe;
+  width: 150px;
+  height: 180px;
+  padding: 1rem;
+  border-radius: 12px;
+  position: relative;
+  right: 27px;
+  display: flex;
+  align-items: center;
+}
+
+.inclusiveDes .bottom,
+.desTrends .bottom {
+  margin-top: 2rem;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.inclusiveDes p:first-child {
+  color: #201c5a;
+  font-size: 18px;
+  width: 200px;
+  margin-bottom: 8px;
+}
+.inclusiveDes .name {
+  font-size: 12px;
+  color: #201c5a;
+}
+
+.inclusiveDes .time,
+.desTrends .time {
+  background: #f6f6fe;
+  padding: 2px;
+  border-radius: 5px;
+  width: 60px;
+  color: #201c5a;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.inclusiveDes .time span,
+.desTrends .time span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  gap: 2px;
+}
+
+.inclusiveDes .bottom .date, .desTrends .bottom .date{
+  font-size: 10px;
+  color: #a7a1c4
+}
+.desTrends p:first-child{
+  font-size: 16px;
+  width: 100px;
+}
+.desTrends .name{
+  font-size: 10px;
+  color: #201c5a;
+}
+
+.chats .gridTemplate2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.chats img{
+width: 80%;
+object-fit: cover;
+
+}
+
+.grid2-item{
+  background: #f6fdfe;
+  width: 120px;
+  height: 85px;
+  padding: 0.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #595eb8;
+}
+
+.inclusiveDes img, .desTrends img{
+  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+#stationary{
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  right: 5px;
+  bottom: 25%;
+  border-radius: 0;
+  object-fit: cover;
+
+}
+
+#globe{
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  right: 5px;
+  bottom: 2;
+  border-radius: 0;
+  object-fit: cover;
+}
+.vidLessons .effectiveText {
+  width: 350px;
+  border-radius: 12px;
+  padding: 1rem;
+  background-image: linear-gradient(to left, #1c20d0, #595eb8);
+  position: relative;
+}
+
+.vidLessons .gradient1,
+.vidLessons .gradient2,
+.vidLessons .gradient3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 0 12px 12px 0;
+  height: 100%;
+}
+
+.vidLessons .gradient1 {
+  background: linear-gradient(to right, #1c20d0, blue);
+  width: 150px;
+}
+.vidLessons .gradient2 {
+  background: repeating-linear-gradient(to right, #1c20d0, blue);
+  width: 100px;
+}
+.vidLessons .gradient3 {
+  width: 50px;
+  background: linear-gradient(to right, #1c20d0, blue);
+}
+
+.effectiveText .text {
+  color: #fff;
+  font-size: 16px;
+  width: 150px;
+  line-height: 1.2rem;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.effectiveText .bottom {
+  position: absolute;
+  bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.effectiveText .name {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: smaller;
+  padding-bottom: 1rem;
+}
+
+.effectiveText .name p {
+  color: #fff;
+  font-weight: lighter;
+}
+
+.effectiveText .name p > span {
+  font-size: 10px;
+  color: #a7a1c4;
+}
+
+.effectiveText .time {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  background: #201c5a;
+  border-radius: 10px;
+  color: #a7a1c4;
+  padding: 2px;
+  width: 55px;
+  text-align: center;
+}
+
+.vidCards {
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vidLessonsCard {
+  background-image: linear-gradient(to right, dodgerblue, #1c20d0);
+  color: whitesmoke;
+  font-weight: 200;
+  border-radius: 8px;
+  width: 150px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin-left: -90px;
+}
+.vidLessonsCard p > span {
+  /* opacity: 0.9; */
+  color: #a7a1c4;
+  font-weight: normal;
+  opacity: 0.8;
+  font-size: 10px;
+}
+
+.vidLessonsCard p {
+  font-size: 13px;
+}
+.vidLessons img {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  /* object-fit: cover; */
+}
+.vidLessonsCard .bottom {
+  display: flex;
+  gap: 10px;
+}
+
+.topTeachers .teachers > span i {
+  position: relative;
+  left: 70px;
+  color: #1c20d0;
+}
+
+.teachersList {
+  position: relative;
+  right: 20px;
+}
+.teachersList img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.teachersList .teacher {
+  margin: 1rem 0;
+}
+
+.teachersList .teacher .profile {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.teachersList .teacher p {
+  font-size: 12px;
+  color: #201c5a;
+}
+
+.teacher .name span {
+  color: #a7a1c4;
+  font-size: 11px;
+}
+.teachersList .teacher .rating {
+  color: #1c20d0;
+}
+.sidebar2 {
+  padding: 0.5rem 1rem;
+  width: 155px;
+  height: fit-content;
+  border-right: 1px solid lightgray;
+}
+
+.homework {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.homework span,
+.courses p {
+  color: #201c5a;
+  font-size: 14px;
+}
+.homework i {
+  color: #1c20d0;
+}
+.courses {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.courses p {
+  margin-bottom: 10px;
+}
+
+.range1 {
+  width: 130px;
+  height: 5px;
+  border-radius: 10px;
+  background: #f6f6fe;
+  position: relative;
+}
+
+.indicator1 {
+  width: 104px;
+  height: 5px;
+  border-radius: 10px;
+  background: #1c20d0;
+  position: absolute;
+  left: 0;
+}
+.range2 {
+  width: 130px;
+  height: 5px;
+  border-radius: 10px;
+  background: #f6f6fe;
+  position: relative;
+}
+
+.indicator2 {
+  width: 78px;
+  height: 5px;
+  border-radius: 10px;
+  background: #1c20d0;
+  position: absolute;
+  left: 0;
+}
+.range3 {
+  width: 130px;
+  height: 5px;
+  border-radius: 10px;
+  background: #f6f6fe;
+  position: relative;
+}
+
+.indicator3 {
+  width: 52px;
+  height: 5px;
+  border-radius: 10px;
+  background: #1c20d0;
+  position: absolute;
+  left: 0;
+}
+.range4 {
+  width: 130px;
+  height: 5px;
+  border-radius: 10px;
+  background: #f6f6fe;
+  position: relative;
+}
+
+.indicator4 {
+  width: 78px;
+  height: 5px;
+  border-radius: 10px;
+  background: #1c20d0;
+  position: absolute;
+  left: 0;
+}
+
+.grade {
+  display: flex;
+  align-items: center;
+  gap: 85px;
+  margin-top: 5px;
+  color: #201c5a;
+  font-size: 14px;
+}
