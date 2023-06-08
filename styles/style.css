@@ -41,8 +41,13 @@ body {
   align-items: center;
 }
 /* .logoDiv{
+  border-right: 1px solid lightgray;
+  padding-right: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
 
 } */
+
 .logo {
   font-size: 16px;
 }
@@ -55,7 +60,7 @@ body {
 
 .headerItem2 {
   display: flex;
-  gap: 230px;
+  gap: 80px;
 }
 
 .headerItem.searchBox {
@@ -124,10 +129,11 @@ body {
 .contentBox {
   display: flex;
   height: 250px;
-  gap: 45px;
+  gap: 40px;
 }
 .subjectsList {
   padding-top: 1rem;
+  padding-right: 1rem;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -228,7 +234,7 @@ body {
 }
 .inclusiveDes .name {
   font-size: 12px;
-  color: #968bb1;
+  color: #201c5a;
 }
 
 .inclusiveDes .time,
