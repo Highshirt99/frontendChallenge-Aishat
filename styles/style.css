@@ -29,7 +29,7 @@ body {
 
 .container .header {
   display: flex;
-  gap: 80px;
+  gap: 73px;
   align-items: center;
   border-bottom: 1px solid lightgray;
   padding: 10px;
